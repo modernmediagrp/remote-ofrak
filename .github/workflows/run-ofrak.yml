@@ -37,7 +37,7 @@ jobs:
           ofrak deps --packages-for apt --missing-only | xargs sudo apt-get install --yes
 
           pushd /tmp
-          git clone https://github.com/ReFirmLabs/binwalk.git
+          git clone https://github.com/modernmediagrp/binwalk.git
           cd binwalk
           sudo ./deps.sh --yes
           python3 -m pip install .
